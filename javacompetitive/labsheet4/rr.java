@@ -1,4 +1,4 @@
-package labsheet5;
+package labsheet4;
  import java.util.Scanner;
 public class rr {
     static long factorial(int n) {

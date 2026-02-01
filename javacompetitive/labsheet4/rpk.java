@@ -1,4 +1,4 @@
-package labsheet5;
+package labsheet4;
 //Ncr labsheet 5
 import java.util.Scanner;
 
