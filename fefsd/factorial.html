@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+</head>
+<body>
+       <script type="text/javascript">
+    var factNum = prompt("Enter a number to find factorial:");
+    if(isNaN(factNum) || factNum < 0){
+        document.write("<br>Factorial: please enter a non-negative integer.<br>");
+    } else {
+        var fact = 1;
+        for(var i=2; i<=factNum; i++){
+            fact *= i;
+        }
+        document.write("<br>Factorial of " + factNum + " is " + fact + ".<br>");
+    }
+    </script>
+</body>
+</html>

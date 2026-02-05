@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeNumber</title>
+</head>
+<body>
+    <script type="text/javascript">
+    var primeNum = prompt("Enter a number to check if it is prime:");
+    if(isNaN(primeNum) || primeNum < 2){
+        document.write("<br>Prime check: not a prime number.<br>");
+    } else {
+        var isPrime = true;
+        for(var i=2; i<=Math.sqrt(primeNum); i++){
+            if(primeNum % i === 0){
+                isPrime = false;
+                break;
+            }
+        }
+        if(isPrime){
+            document.write("<br>" + primeNum + " is a prime number.<br>");
+        } else {
+            document.write("<br>" + primeNum + " is not a prime number.<br>");
+        }
+    }
+    </script>
+
+</body>
+</html>

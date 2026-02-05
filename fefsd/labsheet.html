@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+    var fib1=0,fib2=1,fib=0;
+    var number=prompt("Enter the number of terms for Fibonacci series:");
+    if(number<=0){
+        document.write("Please enter a positive integer.");
+    } else if(number==1){
+        document.write("Fibonacci series up to " + number + " term:<br>");
+        document.write(fib1);
+    } else {
+        document.write("Fibonacci series up to " + number + " terms:<br>");
+        document.write(fib1 + "<br>" + fib2 + "<br>");
+        for(var i=3; i<=number; i++){
+            fib = fib1 + fib2;
+            document.write(fib + "<br>");
+            fib1 = fib2;
+            fib2 = fib;
+        }
+    }
+    </script> 
+</body>
+</html>
