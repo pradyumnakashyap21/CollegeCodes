@@ -1,0 +1,42 @@
+header{
+    background-color: antiquewhite;
+    font-size: 50px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:brown;
+    text-align:center;
+    padding-bottom:30px;
+    margin-top:-5px;
+    padding-top:30px;
+}
+nav{
+    text-align:center;
+    margin-top:-30px;
+   background-color:antiquewhite;
+}
+a{
+    color:darkslategray;
+    padding:20px;
+    padding-top: 5px;
+    ;
+}
+section{
+    margin-top:30px;
+    font-size:20px;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+
+#rh{
+    font-size:25px;
+    margin-left:0px;
+    margin-top:50px;
+    text-align:center;
+    color:antiquewhite;
+    
+}
+body{
+    background-image: url("https://b.zmtcdn.com/data/pictures/0/20669940/b6378892e3a595ca61e4bcdee508441f.jpg?fit=around|960:500&crop=960:500;*,*");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
