@@ -1,5 +1,6 @@
+package labsheet6;
 import java.util.*;
-public class kirran{
+public class k{
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -11,5 +12,6 @@ public class kirran{
             result = result ^ num; 
         }
         System.out.println(result);
+         System.out.println("R Pradyumna Kashyap 20231CSE0120");
     }
 }
