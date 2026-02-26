@@ -27,7 +27,7 @@ public class rr {
         } else {
             System.out.println("Not enough participants");
         }
-        sc.close();
+       System.out.println("R Pradyumna Kashyap 20231CSE0120");
     }
     
 }
