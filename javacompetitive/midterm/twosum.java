@@ -10,8 +10,13 @@ public class twosum {
      for(int i=0; i<n; i++){
         arr[i] = Integer.parseInt(rpk[i]);
      }
-     for(int i=0; i<n; i++){
-        
+     int target = sc.nextInt();
+     for(int i=0; i<arr.length; i++){
+        for(int j = i+1; j<arr.length; j++){
+            if(arr[i] + arr[j] == target){
+                System.out.println(+i+","+j);
+            } 
+        }
      }
 
     }
