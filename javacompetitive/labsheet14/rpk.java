@@ -1,27 +1,31 @@
+//LO2
 package labsheet14;
-
+import java.util.*;
 public class rpk {
 
-    public static int[] computeZ(String s) {
-        int n = s.length();
-        int[] Z = new int[n];
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-        for (int i = 1; i < n; i++) {
-            int count = 0;
-            while (i + count < n && s.charAt(count) == s.charAt(i + count)) {
+        String text = sc.next();
+        String pattern = sc.next();
+
+        int n = text.length();
+        int m = pattern.length();
+        int count = 0;
+
+        for (int i = 0; i <= n - m; i++) {
+            int j = 0;
+            while (j < m && text.charAt(i + j) == pattern.charAt(j)) {
+                j++;
+            }
+            if (j == m) {
                 count++;
             }
-            Z[i] = count;
         }
-        return Z;
-    }
-        public static void main(String[] args) {
-        String s = "aabxabbxaabx";
-        int[] Z = computeZ(s);
-        for (int i = 0; i < Z.length; i++) {
-            System.out.print(Z[i] + " ");
-        }
-        System.out.println("R Pradyumna 20231CSE0120");
+
+        System.out.println(count);
+        
     }
 }
+
 
