@@ -21,7 +21,6 @@ public class rh {
         double probability = (a * b) / c;
         System.out.printf("%.6f", probability);
         System.out.println("  ");
-        System.out.println("R Pradyumna Kashyap 20231CSE0120");
     }
 }
 
